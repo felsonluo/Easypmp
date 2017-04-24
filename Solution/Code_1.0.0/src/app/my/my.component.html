@@ -1,0 +1,124 @@
+<div class="mg-bg" style="background-color: #449be0;height: 100%;">
+
+    <div class="mg-top">
+
+        <div class="mg-org"><a href="###">我的美记</a></div>
+
+        <div class="mg-action">
+            <a class="mg-help" href="###" id="megiFeedback" onclick="MegiTrack.MixPanel.track('Clicked for Help'); MegiTrack.Intercom.track('Clicked Help');" title="帮助">&nbsp;</a>
+            <a class="mg-user" href="###" title="用户">&nbsp;</a>
+            <div *ngIf='1==2' id="divUserInfo" class="m-user-info">
+                <b class="popup-arrow popup-arrow-notch"></b>
+                <b class="popup-arrow"></b>
+                <div class="m-user-img">
+                    <img id="imageHeaderImage" src="src/app/images/default-header.jpg" style="height: 80px;width: 80px;">
+                </div>
+                <div class="m-user-content">
+                    <p id="lblUserName" class="m-ellipsis" style="white-space:nowrap;" title="欧阳万里">欧阳万里</p>
+                    <ul>
+                        <li><a href="###" id="aProfilesettings" onclick="$.mTab.addOrUpdate('个人资料', 'Https://my.megichina.com/Setting/Profile/ProfileEdit',true)">个人资料</a></li>
+                        <li><a href="###" id="aAccountSettings" onclick="$.mTab.addOrUpdate('账号设置', 'Https://my.megichina.com/Setting/Account/AccountEdit',true)">账号设置</a></li>
+                    </ul>
+                </div>
+                <div class="m-lang-top">
+                    <a href="javascript:void(0)" id="0x0009" onclick="mUtil.ChangeLang('0x0009',1)" class="">English</a>
+                </div>
+                <div class="m-quit">
+                    <a id="aLogout" href="Https://login.megichina.com/Account/Logout">退出</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="mg-tab">
+        <tabset>
+            <tab>
+                <template tabHeading>
+                    <span class="mg-tab-inner">
+                        <a href="###"  class="mg-tab-item">仪表盘</a>
+                        <a href="###" class="mg-refresh" > &nbsp;</a>
+                            </span>
+                </template>
+            </tab>
+            <tab *ngIf='1== 0' removable="true">
+                <template tabHeading>
+                    <span class="mg-tab-inner">
+                        <a href="###"  class="mg-tab-item"></a>
+                            </span>
+                </template>
+            </tab>
+            <tab *ngIf='1== 0' removable="true">
+                <template tabHeading>
+                    <span class="mg-tab-inner">
+                        <a href="###"  class="mg-tab-item"></a>
+                            </span>
+                </template>
+            </tab>
+            <tab *ngIf='1== 0' removable="true">
+                <template tabHeading>
+                    <span class="mg-tab-inner">
+                        <a href="###"  class="mg-tab-item"></a>
+                            </span>
+                </template>
+            </tab>
+            <tab *ngIf='1== 0' removable="true">
+                <template tabHeading>
+                    <span class="mg-tab-inner">
+                        <a href="###"  class="mg-tab-item"></a>
+                            </span>
+                </template>
+            </tab>
+            <tab *ngIf='1== 0' removable="true">
+                <template tabHeading>
+                    <span class="mg-tab-inner">
+                        <a href="###"  class="mg-tab-item"></a>
+                            </span>
+                </template>
+            </tab>
+            <tab *ngIf='1== 0' removable="true">
+                <template tabHeading>
+                    <span class="mg-tab-inner">
+                        <a href="###"  class="mg-tab-item"></a>
+                            </span>
+                </template>
+            </tab>
+            <tab *ngIf='1== 0' removable="true">
+                <template tabHeading>
+                    <span class="mg-tab-inner">
+                        <a href="###"  class="mg-tab-item"></a>
+                            </span>
+                </template>
+            </tab>
+            <tab *ngIf='1== 0' removable="true">
+                <template tabHeading>
+                    <span class="mg-tab-inner">
+                        <a href="###"  class="mg-tab-item"></a>
+                            </span>
+                </template>
+            </tab>
+        </tabset>
+    </div>
+    <div class="mg-bottom">
+        <div>
+            <template #navTemplate>
+                <mg-nav></mg-nav>
+            </template>
+            <div class="mg-left">
+                <ul class="mg-nav-top">
+                    <li class="mg-nav-item">
+                        <a href="###" routerLink='org-list' class="item-link mg-nav-dashboard">&nbsp;</a>
+                    </li>
+                    <li class=" mg-nav-item " [ngClass]="{'mg-nav-active': popover.isOpen}">
+                        <a href="### " lass="item-link mg-nav-account " [popover]="navTemplate" placement="right" triggers="focus" container="mgBottom"> &nbsp;</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mg-right ">
+                <div class="mg-frame ">
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

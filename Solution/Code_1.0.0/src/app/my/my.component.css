@@ -1,0 +1,164 @@
+.mg-bg {
+    overflow: hidden;
+}
+
+.mg-top {
+    height: 35px;
+    line-height: 35px;
+    padding-top: 5px;
+}
+
+.mg-bottom {
+    height: calc(100vh - 40px);
+    -webkit-height: calc(100vh - 40px);
+    -moz-height: calc(100vh - 40px);
+    width: 100%;
+}
+
+.mg-bottom .mg-left {
+    background-color: #354960;
+    width: 62px;
+    float: left;
+    min-height: 320px;
+    height: calc(100vh - 75px);
+    -webkit-height: calc(100vh - 75px);
+    -moz-height: calc(100vh - 75px);
+}
+
+.mg-bottom .mg-right {
+    background-color: #fff;
+    width: calc(100% - 62px);
+    -webkit-width: calc(100% - 62px);
+    -moz-width: calc(100% - 62px);
+    float: left;
+    min-height: 320px;
+    height: calc(100vh - 75px);
+    -webkit-height: calc(100vh - 75px);
+    -moz-height: calc(100vh - 75px);
+}
+
+.mg-org a {
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    background-image: url(./src/app/images/org-bg.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 24px;
+    font-size: 15px;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 97px;
+    float: left;
+}
+
+.mg-action {
+    float: right;
+    margin-right: 20px;
+    height: 35px;
+}
+
+.mg-action a {
+    display: block;
+    float: left;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 35px;
+    border-radius: 18px;
+}
+
+.mg-action a:hover {
+    background-color: #2981c6;
+}
+
+.mg-action .mg-search {
+    background-image: url(./src/app/images/search.png);
+}
+
+.mg-action .mg-help {
+    background-image: url(./src/app/images/help.png);
+}
+
+.mg-action .mg-attachment {
+    background-image: url(./src/app/images/attachment.png);
+}
+
+.mg-action .mg-user {
+    background-image: url(./src/app/images/user.png);
+}
+
+.mg-nav-item .item-link {
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    height: 55px;
+}
+
+ul {
+    -webkit-padding-start: 0px;
+}
+
+li.mg-nav-item {
+    margin-left: 30px;
+    display: list-item;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    -webkit-padding-start: 0px;
+}
+
+li.mg-nav-item:not(.mg-nav-active) a:hover {
+    background-color: #323f4f;
+}
+
+.mg-nav-item .mg-nav-dashboard {
+    background-image: url(./src/app/images/nav-dashboard.png);
+}
+
+.mg-nav-item .mg-nav-account {
+    background-image: url(./src/app/images/nav-account.png);
+}
+
+.mg-nav-item .mg-nav-report {
+    background-image: url(./src/app/images/nav-report.png);
+}
+
+.mg-nav-item .mg-nav-folder {
+    background-image: url(./src/app/images/nav-folder.png);
+}
+
+.mg-nav-item .mg-nav-setting {
+    background-image: url(./src/app/images/nav-setting.png);
+}
+
+.mg-nav-item .mg-nav-dashboard:hover {
+    background-image: url(./src/app/images/nav-dashboard-hover.png);
+}
+
+.mg-nav-item .mg-nav-account:hover {
+    background-image: url(./src/app/images/nav-account-hover.png);
+}
+
+.mg-nav-item .mg-nav-report:hover {
+    background-image: url(./src/app/images/nav-report-hover.png);
+}
+
+.mg-nav-item .mg-nav-folder:hover {
+    background-image: url(./src/app/images/nav-folder-hover.png);
+}
+
+.mg-nav-item .mg-nav-setting:hover {
+    background-image: url(./src/app/images/nav-setting-hover.png);
+}
+
+.mg-nav-bottom {
+    margin-top: calc(100vh - 350px);
+    -webkit-margin-top: calc(100vh - 350px);
+    -moz-margin-top: calc(100vh - 350px);
+}
+
+.mg-nav-active {
+    background-image: url(./src/app/images/nav-current.png);
+    background-repeat: repeat-y;
+}

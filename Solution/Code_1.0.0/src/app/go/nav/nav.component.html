@@ -1,0 +1,9 @@
+<div class="mg-sub-nav-container">
+    <div class="mg-sub-nav">
+        <div [ngClass]="{'mg-sub-nav-top':!sub.children,'mg-sub-nav-bottom':!!sub.children}" *ngFor="let sub of navSubModels; let i = index;">
+            <a *ngIf="!sub.children" href="###">
+                {{('go.common.' + sub.nameKey) | translate}}
+                </a>
+        </div>
+    </div>
+</div>

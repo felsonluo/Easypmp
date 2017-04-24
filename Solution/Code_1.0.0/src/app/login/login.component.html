@@ -1,0 +1,58 @@
+<form [formGroup]='loginForm' (ngSubmit)='onSubmit()' style="height: 100%;overflow: hidden;" role="form" novalidate>
+    <div class='mg-main mg-login-bg'>
+        <div class='mg-login-box'>
+            <div class="mg-logo">
+            </div>
+            <div class="mg-lang-bar">
+                {{'login.changeLang' | translate}} :
+
+                <a *ngIf="currentLang !=='en'" href="javascript:void(0)" (click)="changeLang('en')" class="">English</a>
+                <a *ngIf="currentLang !=='zh-cn'" href="javascript:void(0)" (click)="changeLang('zh-cn')" class="">中文(简体)</a>
+                <a *ngIf="currentLang !=='zh-hk'" href="javascript:void(0)" (click)="changeLang('zh-hk')" class="">中文(繁体)</a>
+            </div>
+            <div class="mg-input-div">
+                <input formControlName='email' [(ngModel)]="user.email" [typeahead]="dataSource" (typeaheadLoading)="changeEmailLoading($event)" (typeaheadOnSelect)="emailOnSelect($event)" typeaheadOptionsLimit="7" typeaheadOptionField="email" placeholder="{{'login.email' | translate}}"
+                    class="form-control mg-username-input">
+                <div *ngIf="typeaheadLoading===true">
+                    <i class="glyphicon glyphicon-refresh ng-hide"></i>
+                </div>
+                <div *ngIf="formErrors.email" class="text-danger">
+                    {{ formErrors.email | translate}}
+                </div>
+
+                <input formControlName='password' type="password" [(ngModel)]="user.password" placeholder="{{'login.password' | translate}}" class="form-control mg-password-input ">
+                <div *ngIf="formErrors.password " class="text-danger ">
+                    {{ formErrors.password | translate }}
+                </div>
+                <div style="float: right"><a href="/Password/ForgetPwd ">{{'login.forgotPassword' | translate}}</a></div>
+
+                <button type="submit" [disabled]="loginForm.invalid" class="btn mg-login-button " btnCheckbox btnCheckboxTrue="1 " btnCheckboxFalse="0 ">{{'login.login' | translate}}</button>
+
+                <alert *ngIf='loginSuccess === true' type="success" dismissOnTimeout=3000 style="position: absolute; width: 325px;">
+                    {{ 'login.loginSuccess' | translate}}
+                </alert>
+
+                <alert *ngIf='loginFail === true' type="danger" dismissOnTimeout=3000 style="position: absolute; width: 325px;">
+                    {{ 'login.loginFail' | translate}}
+                </alert>
+
+                <div style=" width: 345px;text-align: center;margin-top: 50px; "><a href="/Password/ForgetPwd ">{{'login.haveNoAccount' | translate}}</a></div>
+
+                <button type="button " class="btn mg-register-button " btnCheckbox btnCheckboxTrue="1 " btnCheckboxFalse="0 ">{{'login.freeTrial' | translate}}</button>
+
+            </div>
+
+            <div class="mg-login-footer " style="margin-top: 47.5px; ">
+                <div class="copy ">
+                    <a href="javascript:void(0); " class="line ">{{'login.contactUs' | translate}}</a>
+                    <a href="javascript:void(0); " class="line ">{{'login.termOfUse' | translate}}</a>
+                    <a href="javascript:void(0); " class="line ">{{'login.privacy' | translate }}</a>
+                    <a href="javascript:void(0); ">{{('login.copyright' | translate)}} {{toyear}}</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</form>

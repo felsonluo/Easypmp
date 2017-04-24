@@ -1,0 +1,55 @@
+<div class="mg-dashboard-title" style="background-color:white;">
+    <span>仪表盘</span>
+</div>
+
+<div class="mg-dashboard-body">
+    <p-panel [toggleable]="true" [style]="{'margin':'0px 50px 20px 50px'}">
+        <p-header>
+            <div class="mg-manage-header">
+                <span class="mg-bank-ico"></span>
+                <a class="mg-item-title"> 银行</a>
+                <span class="mg-bank-manage"></span>
+            </div>
+        </p-header>
+        <div class='mg-bank-chart'>
+            <p-chart type="line" [data]="data" height='140' width='400'></p-chart>
+        </div>
+    </p-panel>
+
+    <p-panel [toggleable]="true" [style]="{'margin':'0px 50px 20px 50px'}">
+        <p-header>
+            <div class="mg-manage-header">
+                <span class="mg-sale-ico"></span>
+                <a class="mg-item-title"> 销售</a>
+            </div>
+        </p-header>
+        <div class='mg-inovice-chart'>
+            <p-chart type="line" [data]="data" height='140' width='400'></p-chart>
+        </div>
+    </p-panel>
+
+    <p-panel [toggleable]="true" [style]="{'margin':'0px 50px 20px 50px'}">
+        <p-header>
+            <div class="mg-manage-header">
+                <span class="mg-purchase-ico"></span>
+                <a class="mg-item-title"> 采购</a>
+            </div>
+        </p-header>
+        <div class='mg-purchase-chart'>
+            <p-chart type="line" [data]="data" height='140' width='400'></p-chart>
+        </div>
+    </p-panel>
+
+    <p-panel [toggleable]="true" [style]="{'margin':'0px 50px 20px 50px'}">
+        <p-header>
+            <div class="mg-manage-header">
+                <span class="mg-expense-ico"></span>
+                <a class="mg-item-title"> 费用报销</a>
+            </div>
+        </p-header>
+        <div class='mg-expense-chart'>
+            <p-chart type="line" [data]="data" height='140' width='400'></p-chart>
+        </div>
+    </p-panel>
+
+</div>

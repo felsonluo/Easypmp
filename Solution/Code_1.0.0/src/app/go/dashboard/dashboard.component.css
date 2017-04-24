@@ -1,0 +1,85 @@
+.mg-dashboard-title {
+    padding: 10px 0px 10px 50px;
+}
+
+.mg-dashboard-title span {
+    font-size: 26px;
+    margin-right: 20px;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+}
+
+.mg-dashboard-body {
+    overflow-x: auto;
+    height: calc(100vh - 145px)
+}
+
+.mg-bank-manage {
+    position: relative;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+    margin-top: 3px;
+    background: url(./src/app/images/bank-manage.png);
+    width: 20px;
+    height: 20px;
+}
+
+.mg-manage-header span:first-child {
+    height: 19px;
+    width: 19px;
+    position: relative;
+    top: 2px;
+    left: 10px;
+    float: left;
+}
+
+.mg-bank-ico {
+    background: url(./src/app//images/dashboard-bank-ico.png) no-repeat;
+}
+
+.mg-sale-ico {
+    background: url(./src/app//images/dashboard-sale-ico.png) no-repeat;
+}
+
+.mg-purchase-ico {
+    background: url(./src/app//images/dashboard-purchase-ico.png) no-repeat;
+}
+
+.mg-expense-ico {
+    background: url(./src/app//images/dashboard-expense-ico.png) no-repeat;
+}
+
+.mg-item-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.mg-manage-header {
+    width: calc(100% - 30px);
+    float: left;
+}
+
+.ui-panel-titlebar {
+    background-color: rgb(248, 252, 255);
+    border-bottom: 0px;
+}
+
+.ui-widget-header {
+    border: 0px;
+}
+
+.ui-panel-titlebar.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+    background-color: #F8FCFF;
+}
+
+div.mg-bank-chart,
+div.mg-inovice-chart,
+div.mg-purchase-chart,
+div.mg-expense-chart {
+    height: 200px;
+    width: 45%;
+}

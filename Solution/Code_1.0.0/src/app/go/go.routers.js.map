@@ -1,0 +1,1 @@
+{"version":3,"file":"go.routers.js","sourceRoot":"","sources":["go.routers.ts"],"names":[],"mappings":";AAGA,oCAAmC,iCAAiC,CAAC,CAAA;AAExD,gBAAQ,GAAG;IACvB;QACC,IAAI,EAAE,EAAE;QACR,SAAS,EAAE,wCAAkB;KAC7B;IACD;QACC,IAAI,EAAE,WAAW;QACjB,SAAS,EAAE,wCAAkB;KAC7B;IACD;QACC,IAAI,EAAC,IAAI;QACT,YAAY,EAAC,+BAA+B;KAC5C;CACD,CAAC"}

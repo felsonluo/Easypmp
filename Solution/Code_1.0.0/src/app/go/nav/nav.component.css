@@ -1,0 +1,24 @@
+.mg-sub-nav-container .mg-sub-nav div.mg-sub-nav-top {
+    height: 30px;
+    margin-bottom: 0px;
+}
+
+.mg-sub-nav-container .mg-sub-nav div.mg-sub-nav-bottom {
+    float: left;
+}
+
+.mg-sub-nav-container .mg-sub-nav div.mg-sub-nav-bottom .mg-nav-first {
+    float: left;
+}
+
+.mg-sub-nav-container .mg-sub-nav div.mg-sub-nav-bottom .mg-nav-second {
+    float: left;
+}
+
+.mg-sub-nav-container .mg-sub-nav div.mg-sub-nav-bottom .mg-nav-last {
+    float: left;
+}
+
+.mg-sub-nav-container .mg-sub-nav div a {
+    color: #303942
+}
